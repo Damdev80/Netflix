@@ -1,0 +1,24 @@
+:root {
+    /* Colores */
+    --fondo:#000;
+    --color-primario:#ffffff;
+    --color-secundario:#c11119;
+    /* Fuentes */
+    --fuente-principal:Arial, sans-serif;
+    --fuente-secundaria:Helvetica, sans-serif;
+    --tamaño-fuente:1rem;
+}
+
+/*-- Normalizar elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: var(--fuente-principal);
+    font-size: var(--tamaño-fuente);
+}
+
