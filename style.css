@@ -22,3 +22,247 @@ body {
     font-size: var(--tamaño-fuente);
 }
 
+
+/* Parte Daniel */
+
+
+.container-main {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.Tendencias{
+    color: var(--color-primario);
+    margin-bottom:0.9rem ;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container_select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    
+}
+
+
+.separador{
+    display: flex;
+    align-self: end;
+    width: 90%;
+    margin-bottom: 1rem;
+    align-items: center;
+    
+}
+
+.select {
+    background-color: #0f0f0f;
+    color: var(--color-primario);
+    padding: 6px;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.select:focus{
+    outline: none;
+}
+
+/* Carrusel */
+
+.container_carrusel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrusel_item{
+    margin-right:1.5rem;
+    border-radius: 10px;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+
+/* Card-netflix tercer container */
+
+.container_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 18rem;
+    height: 15rem;
+    background:linear-gradient(131deg, rgba(25,33,68,1) 35%, rgba(32,14,23,1) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: var(--color-primario);
+    margin-bottom: 0.5rem ;
+    width: 80%;
+}
+
+.container_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.h2-xd{
+    width: 80%;
+    align-self: self-end;
+    margin-left: 15px;  
+}
+
+p{
+    color: var(--color-primario);
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+
+
+.icone{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:right;
+    
+
+}
+
+.img_icone{
+    width:50px;
+    height: 50px;
+}
+
+
+/* Limitar el tamaño y controlar el desplazamiento del carrusel */
+.carrusel-container {
+    position: relative;
+    width: 100%; /* Ajusta según el diseño */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrusel_item {
+    flex: 0 0 150px; /* Ancho fijo para cada imagen */
+    border-radius: 10px;
+}
+
+.carrusel_item img {
+    width: 100%;
+    height: 200px; /* Ajusta el alto según lo que necesites */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.carrusel_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}   
+
+.carrusel_item img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.prev,
+.next {
+    background: #0f0f0f;
+    color: var(--color-primario);
+    border: none;
+    border-radius:10px;
+    width: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.prev {
+    position: absolute;
+    left: 120px;
+    width: 25px;
+}
+
+.next {
+    position: absolute;
+    right: 120px;
+}
+
+.prev:hover,
+.next:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+/* Contenedor que envuelve número e imagen */
+.overlay-container {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Estilo del número */
+.movie-number {
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    color: var(--fondo) ;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 100;
+    filter: drop-shadow(0 0 2px #fff);
+}
+
+/*Fin de Daniel*/
