@@ -7,6 +7,11 @@
     --fuente-principal:Arial, sans-serif;
     --fuente-secundaria:Helvetica, sans-serif;
     --tamaño-fuente:1rem;
+
+    /* Colores daniel trejos */
+    --color-fondo-acordeon: #414141;
+    --color-fondo-acordeon-rgb: 150, 150, 150; /* RGB equivalente */
+
 }
 
 /*-- Normalizar elementos */
@@ -20,6 +25,8 @@ body {
     background-color: var(--fondo);
     font-family: var(--fuente-principal);
     font-size: var(--tamaño-fuente);
+    /* Cambio DT */
+    color: var(--color-primario); 
 }
 
 
@@ -54,7 +61,10 @@ body {
     
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .separador{
     display: flex;
     align-self: end;
@@ -265,4 +275,131 @@ p{
     filter: drop-shadow(0 0 2px #fff);
 }
 
+<<<<<<< Updated upstream
 /*Fin de Daniel*/
+=======
+/*Fin de Daniel Buelvas*/
+
+/*-- Estilos danielt */
+
+.container-faq, .footer-signup{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.faq-title {
+    margin-bottom: 8px;
+}
+.acordeon-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.acordeon-contenido{
+    font-size: 1.5rem;
+    /*Solo se mantiene este padding*/
+    padding: 24px; 
+}
+
+details {
+    background-color: var(--color-fondo-acordeon);
+    width: 100%;
+}
+
+details[open] .acordeon-contenido {
+    border-top: 2px solid black;
+}
+
+summary {
+    list-style: none; /* Elimina el marcador predeterminado */
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-fondo-acordeon);
+    cursor: pointer;
+    padding: 24px;
+}
+
+summary:hover {
+    /* Hover dinamico con la variable en eb rgb ->rgba */
+    background-color: rgba(var(--color-fondo-acordeon-rgb), 0.2 );
+}
+
+
+details summary svg {
+    transform: rotate(0deg); /* Estado inicial */
+    /*  Animación suave */
+    transition: transform 0.1s ease;
+}
+
+details[open] summary svg {
+    transform: rotate(45deg); /* Gira 45 grados para formar una X */
+}
+
+
+.btn-comenzar{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Elementos del formulario */
+
+.footer-signup{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 72px;
+    margin-bottom: 16px;
+}
+.email-form {
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    margin: 0 auto;
+}
+.form-elements{
+    display: flex;
+    padding-top: 16px;
+    justify-content: center;
+    gap: 8px;
+}
+
+input {
+    width: 557px;
+    padding: 24px 0 16px 16px;
+    background-color: var(--fondo);
+    color: #FFF;
+    font-size: 1.5rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 6px;
+}
+
+.titulo-form{
+    text-align: center;
+    font-weight: 100;
+
+}
+
+/* Fin Daniel Trejos */
+>>>>>>> Stashed changes

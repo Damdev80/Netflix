@@ -89,5 +89,24 @@
         </div>
     </main>
     
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            //seleccion de todos los detalles
+            const detailsElements = document.querySelectorAll('.acordeon-faq details');
+                detailsElements.forEach((detail) => {
+                    //para cada elemento detalle se le asina un elemento click
+                    detail.addEventListener('click', () => {
+                    //se quita el atributo open de todos los otros detalles excepto el que se ha clicado    
+                    detailsElements.forEach((otherDetail) => {
+                        if (otherDetail !== detail) {
+                            otherDetail.removeAttribute('open');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
