@@ -3,10 +3,17 @@
     --fondo:#000;
     --color-primario:#ffffff;
     --color-secundario:#c11119;
+    --fondo-semitrasparente:#000000b3;
+    --fondo-semitrasparente2:#242424b3;
     /* Fuentes */
     --fuente-principal:Arial, sans-serif;
     --fuente-secundaria:Helvetica, sans-serif;
     --tamaño-fuente:1rem;
+
+    /* Colores daniel trejos */
+    --color-fondo-acordeon: #414141;
+    --color-fondo-acordeon-rgb: 150, 150, 150; /* RGB equivalente */
+
 }
 
 /*-- Normalizar elementos */
@@ -20,5 +27,540 @@ body {
     background-color: var(--fondo);
     font-family: var(--fuente-principal);
     font-size: var(--tamaño-fuente);
+    /* Cambio DT */
+    color: var(--color-primario); 
 }
 
+
+/* Contenedor Principal */
+.container{
+    height: 100%; /* Altura igual al viewport */
+    background-size: cover; /* Que cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; 
+    background-image: url(/img/background.jpg);
+    box-shadow: inset 0 0 100px 80px rgba(0, 0, 0, 0.6);
+
+}
+
+/* Hero Img */
+.hero{
+    height: 100vh; /* Altura igual al viewport */
+    background-color: var(--fondo-semitrasparente);
+}
+
+/* Header Start */
+.container-header {
+  margin: auto;
+  display: flex;
+  width: 83vw;
+  
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b_login {
+    margin: 0px 4px;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: solid 0.0625rem #00000000;
+    border-radius: calc(0.25rem - 0.0625rem);
+    width: 120px;
+    height: 32px;    
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+
+.b_language{
+    margin: 0px 4px;
+    background-color: #00000000;
+    color: var(--color-primario);
+    border: solid 0.0625rem var(--color-borde);
+    border-radius: calc(0.25rem - 0.0625rem);
+    width: 120px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;  
+}
+/* Header End */
+
+
+/* Main Start */
+.container-main{
+    margin: auto;
+    display: flex;
+    min-width: 10%;
+    max-width: 40%;
+    height: 70%;
+    flex-direction: column;
+    
+}
+
+
+.titleCardMain{
+  
+  margin: 5rem 20px 0 20px;
+  color: var(--color-primario);
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+.subtitleCardMain{
+  margin: 1.5rem 0;
+  color: var(--color-primario); 
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.textCardMain{
+  color: var(--color-primario);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.bottom-card{
+  width: 100%;
+}
+
+.formCard{
+  display: flex;
+  margin: 1.2rem 0;
+}
+.buttomsCard{
+  position: relative;
+  width: 70%;
+ }
+ 
+ .inputEmail {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 0.2rem;
+  background-color: var(--fondo-semitrasparente2);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #414141;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+ }
+ 
+ .labelEmail {
+  position: absolute;
+  left: 15px;
+  color: #a4a4a4;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .inputEmail:focus, inputEmail:valid {
+  font-weight: 700;
+  outline: none;
+  border: 2px solid #ffffff;
+ }
+ 
+ .inputEmail:focus ~ label, inputEmail:valid ~ label {
+  font-weight: 700;
+  transform: translateY(20%) translateX(-15%) scale(0.7);
+  padding: 0 .2em;
+ }
+
+
+ .empezar{
+  width: 38%;
+ }
+
+ .b_go{
+  margin: 0 10px;
+  padding: 10px;
+  background-color: var(--color-secundario);
+  color: var(--color-primario);
+  border: solid 0.0625rem #00000000;
+  border-radius: calc(0.25rem - 0.0625rem);
+  width: 100%;
+  height: 100%;    
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+ }
+ 
+/* Main End */
+/* Parte Daniel */
+
+
+.container-main {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.Tendencias{
+    color: var(--color-primario);
+    margin-bottom:0.9rem ;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container_select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    
+}
+
+.separador{
+    display: flex;
+    align-self: end;
+    width: 90%;
+    margin-bottom: 1rem;
+    align-items: center;
+    
+}
+
+.select {
+    background-color: #0f0f0f;
+    color: var(--color-primario);
+    padding: 6px;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.select:focus{
+    outline: none;
+}
+
+/* Carrusel */
+
+.container_carrusel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrusel_item{
+    margin-right:1.5rem;
+    border-radius: 10px;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+
+/* Card-netflix tercer container */
+
+.container_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 18rem;
+    height: 15rem;
+    background:linear-gradient(131deg, rgba(25,33,68,1) 35%, rgba(32,14,23,1) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: var(--color-primario);
+    margin-bottom: 0.5rem ;
+    width: 80%;
+}
+
+.container_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.h2-xd{
+    width: 80%;
+    align-self: self-end;
+    margin-left: 15px;  
+}
+
+p{
+    color: var(--color-primario);
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+
+
+.icone{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:right;
+    
+
+}
+
+.img_icone{
+    width:50px;
+    height: 50px;
+}
+
+
+/* Limitar el tamaño y controlar el desplazamiento del carrusel */
+.carrusel-container {
+    position: relative;
+    width: 100%; /* Ajusta según el diseño */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrusel_item {
+    flex: 0 0 150px; /* Ancho fijo para cada imagen */
+    border-radius: 10px;
+}
+
+.carrusel_item img {
+    width: 100%;
+    height: 200px; /* Ajusta el alto según lo que necesites */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.carrusel_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}   
+
+.carrusel_item img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.prev,
+.next {
+    background: #0f0f0f;
+    color: var(--color-primario);
+    border: none;
+    border-radius:10px;
+    width: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.prev {
+    position: absolute;
+    left: 120px;
+    width: 25px;
+}
+
+.next {
+    position: absolute;
+    right: 120px;
+}
+
+.prev:hover,
+.next:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+/* Contenedor que envuelve número e imagen */
+.overlay-container {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Estilo del número */
+.movie-number {
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    color: var(--fondo) ;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 100;
+    filter: drop-shadow(0 0 2px #fff);
+}
+
+/*Fin de Daniel Buelvas*/
+
+/*-- Estilos danielt */
+
+.container-faq, .footer-signup{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.faq-title {
+    margin-bottom: 8px;
+}
+.acordeon-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.acordeon-contenido{
+    font-size: 1.5rem;
+    /*Solo se mantiene este padding*/
+    padding: 24px; 
+}
+
+details {
+    background-color: var(--color-fondo-acordeon);
+    width: 100%;
+}
+
+details[open] .acordeon-contenido {
+    border-top: 2px solid black;
+}
+
+summary {
+    list-style: none; /* Elimina el marcador predeterminado */
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-fondo-acordeon);
+    cursor: pointer;
+    padding: 24px;
+}
+
+summary:hover {
+    /* Hover dinamico con la variable en eb rgb ->rgba */
+    background-color: rgba(var(--color-fondo-acordeon-rgb), 0.2 );
+}
+
+
+details summary svg {
+    transform: rotate(0deg); /* Estado inicial */
+    /*  Animación suave */
+    transition: transform 0.1s ease;
+}
+
+details[open] summary svg {
+    transform: rotate(45deg); /* Gira 45 grados para formar una X */
+}
+
+
+.btn-comenzar{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Elementos del formulario */
+
+.footer-signup{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 72px;
+    margin-bottom: 16px;
+}
+.email-form {
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    margin: 0 auto;
+}
+.form-elements{
+    display: flex;
+    padding-top: 16px;
+    justify-content: center;
+    gap: 8px;
+}
+
+input {
+    width: 557px;
+    padding: 24px 0 16px 16px;
+    background-color: var(--fondo);
+    color: #FFF;
+    font-size: 1.5rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 6px;
+}
+
+.titulo-form{
+    text-align: center;
+    font-weight: 100;
+
+}
+
+/* Fin Daniel Trejos */
